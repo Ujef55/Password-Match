@@ -12,21 +12,29 @@ changePassBtn.addEventListener('click', function(e) {
     if (newPass === '') {
         msg.textContent = '*Please enter a new password*';
         msg.style.color = 'red';
+
+         // Clear input fields
         newPasswordInput.value = '';
         confirmPasswordInput.value = '';
     } else if (confirmPass === '') {
         msg.textContent = '*Please confirm your new password*';
         msg.style.color = 'red';
+        
+         // Clear input fields
         newPasswordInput.value = '';
         confirmPasswordInput.value = '';
     } else if (newPass.length < 7) {
         msg.textContent = '*Password should be at least 7 characters long*'
         msg.style.color = 'red';
+
+         // Clear input fields
         newPasswordInput.value = '';
         confirmPasswordInput.value = '';
     } else if (newPass !== confirmPass) {
         msg.textContent = '*Passwords do not match*';
         msg.style.color = 'red';
+
+         // Clear input fields
         newPasswordInput.value = '';
         confirmPasswordInput.value = '';
     } else {
