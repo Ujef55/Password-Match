@@ -2,6 +2,26 @@ const changePassBtn = document.querySelector('#submt');
 const msg = document.querySelector('.msg');
 const newPasswordInput = document.querySelector('#newPassword');
 const confirmPasswordInput = document.querySelector('#confirmPassword');
+const eyeBtn = document.querySelector('#eye');
+let state = false;
+
+
+function eyeWasClicked() {
+    if(state) {
+        newPasswordInput.setAttribute('type', 'password');
+        eyeBtn.style.color = '#7a797e';
+        state = false;
+    } else {
+        newPasswordInput.setAttribute('type', 'text');
+        eyeBtn.style.color = '#1877f2';
+        state = true;
+    }
+}
+
+
+
+eyeBtn.addEventListener('click', eyeWasClicked);
+
 
 changePassBtn.addEventListener('click', function(e) {
     e.preventDefault();
