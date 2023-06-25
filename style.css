@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@300&display=swap');
 
+
+
+
+body {
+  background-color: aliceblue;
+}
+
+
 .container {
     width: 300px;
     margin: 50px auto;
@@ -21,7 +29,7 @@
 
   .form-group .fa-eye {
     position: absolute;
-    top: 29px;
+    top: 31px;
     right: -10px;
     color: #7a797e;
     font-size: 20px;
@@ -69,3 +77,28 @@
     background-color: #0f60c7;
   }
   
+
+  @media only screen and (max-width: 600px) {
+    .container {
+      width: 70%;
+      margin: 80px auto;
+    }
+  
+    .form-group {
+      margin-bottom: 12px;
+    }
+  
+    .submit-button {
+      padding: 10px 15px;
+    }
+
+    .form-group .fa-eye {
+      position: absolute;
+      top: 31px;
+      right: -10px;
+      color: #7a797e;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+  }
